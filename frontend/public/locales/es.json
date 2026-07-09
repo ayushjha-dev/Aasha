@@ -1,0 +1,118 @@
+{
+  "common": {
+    "appName": "Aasha",
+    "loading": "Cargando...",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Crear",
+    "back": "Volver",
+    "viewAll": "Ver todo",
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
+    "createAccount": "Crear cuenta"
+  },
+  "landing": {
+    "tagline": "Sistema de Coordinación de Emergencias",
+    "heading": "¿Cómo podemos ayudar?",
+    "subtitle": "Seleccione su rol para acceder al portal correspondiente",
+    "citizen": {
+      "title": "Necesito Ayuda",
+      "desc": "Reportar incidentes, encontrar refugios, rastrear el estado de emergencia, donar"
+    },
+    "volunteer": {
+      "title": "Quiero ser Voluntario",
+      "desc": "Unirse a equipos, aceptar asignaciones de tareas, responder a emergencias"
+    },
+    "admin": {
+      "title": "Acceso Administrador",
+      "desc": "Panel de control del centro de mando, gestionar incidentes, refugios y voluntarios"
+    }
+  },
+  "auth": {
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "fullName": "Nombre completo",
+    "phone": "Teléfono (opcional)",
+    "noAccount": "¿No tienes una cuenta?",
+    "hasAccount": "¿Ya tienes una cuenta?",
+    "specializations": "Especializaciones"
+  },
+  "citizen": {
+    "portal": "Portal Ciudadano",
+    "hello": "Hola",
+    "reportIncident": "Reportar Incidente",
+    "findShelters": "Buscar Refugios",
+    "myReports": "Mis Reportes",
+    "donate": "Donar",
+    "recentReports": "Mis Reportes Recientes",
+    "availableShelters": "Refugios Disponibles"
+  },
+  "volunteer": {
+    "portal": "Portal de Voluntarios",
+    "welcome": "Bienvenido",
+    "openIncidents": "Incidentes Abiertos",
+    "myTeams": "Mis Equipos",
+    "skills": "Habilidades",
+    "needsResponse": "Necesita Respuesta",
+    "activeIncidents": "Incidentes Activos",
+    "volunteerTeams": "Equipos de Voluntarios",
+    "createTeam": "Crear Equipo",
+    "joinTeam": "Unirse",
+    "leaveTeam": "Salir",
+    "tasks": "Mis Tareas",
+    "markEnRoute": "Marcar en Camino",
+    "markCompleted": "Marcar Completado"
+  },
+  "admin": {
+    "commandCenter": "Centro de Mando",
+    "dashboard": "Panel de Control",
+    "activeIncidents": "Incidentes Activos",
+    "operationalShelters": "Refugios Operativos",
+    "activeVolunteers": "Voluntarios Activos",
+    "totalDonations": "Donaciones Totales",
+    "incidentManagement": "Gestión de Incidentes",
+    "shelterManagement": "Gestión de Refugios",
+    "volunteerDirectory": "Directorio de Voluntarios",
+    "auditLog": "Registro de Auditoría",
+    "settings": "Configuración",
+    "exportJson": "Exportar JSON",
+    "exportCsv": "Exportar CSV"
+  },
+  "incident": {
+    "category": "Categoría",
+    "medical": "Emergencia Médica",
+    "fire": "Incendio",
+    "flood": "Inundación",
+    "trapped": "Persona Atrapada",
+    "other": "Otro",
+    "severity": "Nivel de Urgencia",
+    "description": "Describa la situación",
+    "location": "Su Ubicación",
+    "captureGps": "Capturar Ubicación GPS",
+    "submitReport": "Enviar Reporte",
+    "reported": "Reportado",
+    "acknowledged": "Reconocido",
+    "assigned": "Asignado",
+    "resolved": "Resuelto"
+  },
+  "shelter": {
+    "name": "Nombre del Refugio",
+    "capacity": "Capacidad",
+    "occupancy": "Ocupación",
+    "status": "Estado",
+    "operational": "Operativo",
+    "full": "Lleno",
+    "closed": "Cerrado"
+  },
+  "donation": {
+    "makedonation": "Hacer una Donación",
+    "goods": "Bienes / Suministros",
+    "funds": "Fondos",
+    "pledged": "Comprometido",
+    "collected": "Recolectado",
+    "distributed": "Distribuido"
+  }
+}

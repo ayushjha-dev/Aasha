@@ -1,0 +1,118 @@
+{
+  "common": {
+    "appName": "फ्लेयर स्पेस",
+    "loading": "लोड हो रहा है...",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "create": "बनाएं",
+    "back": "वापस",
+    "viewAll": "सभी देखें",
+    "signIn": "साइन इन करें",
+    "signOut": "साइन आउट करें",
+    "createAccount": "खाता बनाएं"
+  },
+  "landing": {
+    "tagline": "आपातकालीन समन्वय प्रणाली",
+    "heading": "हम कैसे मदद कर सकते हैं?",
+    "subtitle": "उचित पोर्टल तक पहुंचने के लिए अपनी भूमिका चुनें",
+    "citizen": {
+      "title": "मुझे मदद चाहिए",
+      "desc": "घटनाओं की रिपोर्ट करें, आश्रय खोजें, आपातकालीन स्थिति ट्रैक करें, दान करें"
+    },
+    "volunteer": {
+      "title": "मैं स्वयंसेवा करना चाहता हूं",
+      "desc": "टीमों में शामिल हों, कार्य असाइनमेंट स्वीकार करें, आपात स्थितियों का जवाब दें"
+    },
+    "admin": {
+      "title": "एडमिन लॉगिन",
+      "desc": "कमांड सेंटर डैशबोर्ड, घटनाओं, आश्रयों और स्वयंसेवकों का प्रबंधन"
+    }
+  },
+  "auth": {
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "fullName": "पूरा नाम",
+    "phone": "फोन (वैकल्पिक)",
+    "noAccount": "खाता नहीं है?",
+    "hasAccount": "पहले से खाता है?",
+    "specializations": "विशेषज्ञता"
+  },
+  "citizen": {
+    "portal": "नागरिक पोर्टल",
+    "hello": "नमस्ते",
+    "reportIncident": "घटना की रिपोर्ट करें",
+    "findShelters": "आश्रय खोजें",
+    "myReports": "मेरी रिपोर्ट",
+    "donate": "दान करें",
+    "recentReports": "मेरी हालिया रिपोर्ट",
+    "availableShelters": "उपलब्ध आश्रय"
+  },
+  "volunteer": {
+    "portal": "स्वयंसेवक पोर्टल",
+    "welcome": "स्वागत है",
+    "openIncidents": "खुली घटनाएं",
+    "myTeams": "मेरी टीमें",
+    "skills": "कौशल",
+    "needsResponse": "प्रतिक्रिया आवश्यक",
+    "activeIncidents": "सक्रिय घटनाएं",
+    "volunteerTeams": "स्वयंसेवक टीमें",
+    "createTeam": "टीम बनाएं",
+    "joinTeam": "शामिल हों",
+    "leaveTeam": "छोड़ें",
+    "tasks": "मेरे कार्य",
+    "markEnRoute": "रास्ते में चिह्नित करें",
+    "markCompleted": "पूर्ण चिह्नित करें"
+  },
+  "admin": {
+    "commandCenter": "कमांड सेंटर",
+    "dashboard": "डैशबोर्ड",
+    "activeIncidents": "सक्रिय घटनाएं",
+    "operationalShelters": "संचालनात्मक आश्रय",
+    "activeVolunteers": "सक्रिय स्वयंसेवक",
+    "totalDonations": "कुल दान",
+    "incidentManagement": "घटना प्रबंधन",
+    "shelterManagement": "आश्रय प्रबंधन",
+    "volunteerDirectory": "स्वयंसेवक निर्देशिका",
+    "auditLog": "ऑडिट लॉग",
+    "settings": "सेटिंग्स",
+    "exportJson": "JSON निर्यात करें",
+    "exportCsv": "CSV निर्यात करें"
+  },
+  "incident": {
+    "category": "श्रेणी",
+    "medical": "चिकित्सा आपातकाल",
+    "fire": "आग",
+    "flood": "बाढ़",
+    "trapped": "फंसा हुआ व्यक्ति",
+    "other": "अन्य",
+    "severity": "तत्कालता स्तर",
+    "description": "स्थिति का वर्णन करें",
+    "location": "आपका स्थान",
+    "captureGps": "GPS स्थान कैप्चर करें",
+    "submitReport": "रिपोर्ट जमा करें",
+    "reported": "रिपोर्ट किया गया",
+    "acknowledged": "स्वीकार किया गया",
+    "assigned": "सौंपा गया",
+    "resolved": "हल किया गया"
+  },
+  "shelter": {
+    "name": "आश्रय का नाम",
+    "capacity": "क्षमता",
+    "occupancy": "अधिभोग",
+    "status": "स्थिति",
+    "operational": "संचालनात्मक",
+    "full": "भरा हुआ",
+    "closed": "बंद"
+  },
+  "donation": {
+    "makedonation": "दान करें",
+    "goods": "सामान / आपूर्ति",
+    "funds": "धनराशि",
+    "pledged": "प्रतिज्ञा किया गया",
+    "collected": "एकत्र किया गया",
+    "distributed": "वितरित किया गया"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "common": {
+    "appName": "Aasha",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "back": "Back",
+    "viewAll": "View all",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "createAccount": "Create Account"
+  },
+  "landing": {
+    "tagline": "Emergency Coordination System",
+    "heading": "How can we help?",
+    "subtitle": "Select your role to access the appropriate portal",
+    "citizen": {
+      "title": "I Need Help",
+      "desc": "Report incidents, find shelters, track emergency status, make donations"
+    },
+    "volunteer": {
+      "title": "I Want to Volunteer",
+      "desc": "Join teams, accept task assignments, respond to emergencies"
+    },
+    "admin": {
+      "title": "Admin Login",
+      "desc": "Command center dashboard, manage incidents, shelters, and volunteers"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "fullName": "Full Name",
+    "phone": "Phone (optional)",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "specializations": "Specializations"
+  },
+  "citizen": {
+    "portal": "Citizen Portal",
+    "hello": "Hello",
+    "reportIncident": "Report Incident",
+    "findShelters": "Find Shelters",
+    "myReports": "My Reports",
+    "donate": "Donate",
+    "recentReports": "My Recent Reports",
+    "availableShelters": "Available Shelters"
+  },
+  "volunteer": {
+    "portal": "Volunteer Portal",
+    "welcome": "Welcome",
+    "openIncidents": "Open Incidents",
+    "myTeams": "My Teams",
+    "skills": "Skills",
+    "needsResponse": "Needs Response",
+    "activeIncidents": "Active Incidents",
+    "volunteerTeams": "Volunteer Teams",
+    "createTeam": "Create Team",
+    "joinTeam": "Join",
+    "leaveTeam": "Leave",
+    "tasks": "My Tasks",
+    "markEnRoute": "Mark En Route",
+    "markCompleted": "Mark Completed"
+  },
+  "admin": {
+    "commandCenter": "Command Center",
+    "dashboard": "Dashboard",
+    "activeIncidents": "Active Incidents",
+    "operationalShelters": "Operational Shelters",
+    "activeVolunteers": "Active Volunteers",
+    "totalDonations": "Total Donations",
+    "incidentManagement": "Incident Management",
+    "shelterManagement": "Shelter Management",
+    "volunteerDirectory": "Volunteer Directory",
+    "auditLog": "Audit Log",
+    "settings": "Settings",
+    "exportJson": "Export JSON",
+    "exportCsv": "Export CSV"
+  },
+  "incident": {
+    "category": "Category",
+    "medical": "Medical Emergency",
+    "fire": "Fire",
+    "flood": "Flood",
+    "trapped": "Person Trapped",
+    "other": "Other",
+    "severity": "Urgency Level",
+    "description": "Describe the situation",
+    "location": "Your Location",
+    "captureGps": "Capture GPS Location",
+    "submitReport": "Submit Report",
+    "reported": "Reported",
+    "acknowledged": "Acknowledged",
+    "assigned": "Assigned",
+    "resolved": "Resolved"
+  },
+  "shelter": {
+    "name": "Shelter Name",
+    "capacity": "Capacity",
+    "occupancy": "Occupancy",
+    "status": "Status",
+    "operational": "Operational",
+    "full": "Full",
+    "closed": "Closed"
+  },
+  "donation": {
+    "makedonation": "Make a Donation",
+    "goods": "Goods / Supplies",
+    "funds": "Funds",
+    "pledged": "Pledged",
+    "collected": "Collected",
+    "distributed": "Distributed"
+  }
+}

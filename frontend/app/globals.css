@@ -1,0 +1,309 @@
+@import "tailwindcss";
+
+/* ========================================================================
+   Aasha — Design System Tokens
+   Functional color palette for emergency/crisis management.
+   Dark dashboard UI with deliberate, restrained color coding.
+   ======================================================================== */
+
+@theme inline {
+  /* — Base colors — */
+  --color-background: var(--bg-primary);
+  --color-foreground: var(--text-primary);
+  --font-sans: var(--font-ibm-plex-sans);
+  --font-mono: var(--font-ibm-plex-mono);
+  --font-display: var(--font-barlow-condensed);
+
+  /* — Incident severity — */
+  --color-incident-critical: #DC2626;
+  --color-incident-high: #EA580C;
+  --color-incident-medium: #D97706;
+  --color-incident-low: #CA8A04;
+  --color-incident-info: #2563EB;
+
+  /* — Shelter capacity — */
+  --color-shelter-available: #16A34A;
+  --color-shelter-filling: #D97706;
+  --color-shelter-full: #DC2626;
+
+  /* — Status — */
+  --color-status-resolved: #16A34A;
+  --color-status-active: #2563EB;
+  --color-status-pending: #D97706;
+
+  /* — Surfaces — */
+  --color-surface-primary: #0F172A;
+  --color-surface-secondary: #1E293B;
+  --color-surface-elevated: #334155;
+  --color-surface-border: #475569;
+
+  /* — Text — */
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+
+  /* — Accent — */
+  --color-accent: #F59E0B;
+  --color-accent-hover: #D97706;
+}
+
+:root {
+  --bg-primary: #0F172A;
+  --bg-secondary: #1E293B;
+  --bg-surface: #334155;
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --border-color: #475569;
+}
+
+/* ========================================================================
+   Base styles
+   ======================================================================== */
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-ibm-plex-sans), 'IBM Plex Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================================================
+   Typography classes
+   ======================================================================== */
+
+.font-display {
+  font-family: var(--font-barlow-condensed), 'Barlow Condensed', system-ui, sans-serif;
+}
+
+.text-heading-xl {
+  font-family: var(--font-barlow-condensed), 'Barlow Condensed', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.text-heading-lg {
+  font-family: var(--font-barlow-condensed), 'Barlow Condensed', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+}
+
+.text-heading-md {
+  font-family: var(--font-barlow-condensed), 'Barlow Condensed', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.text-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+/* ========================================================================
+   Component patterns
+   ======================================================================== */
+
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.card-elevated {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: #F59E0B;
+  color: #0F172A;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+.btn-primary:hover {
+  background: #D97706;
+}
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: transparent;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+.btn-secondary:hover {
+  background: var(--bg-surface);
+  border-color: #64748B;
+}
+
+.btn-danger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: #DC2626;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+.btn-danger:hover {
+  background: #B91C1C;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  transition: border-color 150ms ease;
+}
+.input-field:focus {
+  outline: none;
+  border-color: #F59E0B;
+}
+.input-field::placeholder {
+  color: var(--text-secondary);
+}
+
+.select-field {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.select-field:focus {
+  outline: none;
+  border-color: #F59E0B;
+}
+
+/* ========================================================================
+   Status badges
+   ======================================================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 0.25rem;
+}
+
+.badge-critical { background: #DC26261A; color: #FCA5A5; border: 1px solid #DC262633; }
+.badge-high { background: #EA580C1A; color: #FDBA74; border: 1px solid #EA580C33; }
+.badge-medium { background: #D977061A; color: #FCD34D; border: 1px solid #D9770633; }
+.badge-low { background: #CA8A041A; color: #FDE047; border: 1px solid #CA8A0433; }
+.badge-info { background: #2563EB1A; color: #93C5FD; border: 1px solid #2563EB33; }
+.badge-success { background: #16A34A1A; color: #86EFAC; border: 1px solid #16A34A33; }
+
+/* ========================================================================
+   Scrollbar styling
+   ======================================================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748B;
+}
+
+/* ========================================================================
+   Leaflet overrides (dark theme)
+   ======================================================================== */
+
+.leaflet-container {
+  background: var(--bg-primary) !important;
+  border-radius: 0.5rem;
+}
+
+.leaflet-popup-content-wrapper {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 0.375rem !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+}
+
+.leaflet-popup-tip {
+  background: var(--bg-secondary) !important;
+}
+
+/* ========================================================================
+   Animations
+   ======================================================================== */
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+@keyframes slide-up {
+  from { transform: translateY(8px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slide-up 300ms ease-out;
+}
