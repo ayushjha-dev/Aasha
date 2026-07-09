@@ -78,17 +78,13 @@ export default function CitizenSheltersPage() {
             <div className="flex items-center gap-0.5 bg-surface-primary rounded border border-surface-border ml-auto">
               <button
                 onClick={() => setView('map')}
-                className={`px-2 py-1 text-[10px] font-bold rounded transition-colors cursor-pointer ${
-                  view === 'map' ? 'bg-accent text-surface-primary' : 'text-text-secondary hover:text-text-primary'
-                }`}
+                className="px-2 py-1 text-[10px] font-bold rounded transition-colors cursor-pointer bg-accent text-surface-primary"
               >
                 Map
               </button>
               <button
                 onClick={() => setView('list')}
-                className={`px-2 py-1 text-[10px] font-bold rounded transition-colors cursor-pointer ${
-                  view === 'list' ? 'bg-accent text-surface-primary' : 'text-text-secondary hover:text-text-primary'
-                }`}
+                className="px-2 py-1 text-[10px] font-bold rounded transition-colors cursor-pointer text-text-secondary hover:text-text-primary"
               >
                 List
               </button>
@@ -114,17 +110,13 @@ export default function CitizenSheltersPage() {
             <div className="flex items-center gap-1 bg-surface-secondary rounded border border-surface-border">
               <button
                 onClick={() => setView('map')}
-                className={`px-3 py-1.5 text-xs font-medium rounded transition-colors cursor-pointer ${
-                  view === 'map' ? 'bg-accent text-surface-primary' : 'text-text-secondary hover:text-text-primary'
-                }`}
+                className="px-3 py-1.5 text-xs font-medium rounded transition-colors cursor-pointer text-text-secondary hover:text-text-primary"
               >
                 Map
               </button>
               <button
                 onClick={() => setView('list')}
-                className={`px-3 py-1.5 text-xs font-medium rounded transition-colors cursor-pointer ${
-                  view === 'list' ? 'bg-accent text-surface-primary' : 'text-text-secondary hover:text-text-primary'
-                }`}
+                className="px-3 py-1.5 text-xs font-medium rounded transition-colors cursor-pointer bg-accent text-surface-primary"
               >
                 List
               </button>
