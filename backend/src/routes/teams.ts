@@ -161,7 +161,7 @@ router.put('/:id', auth, authorize('admin', 'volunteer'), async (req: Request, r
         updatedAt: new Date()
       };
 
-      logMockAudit(req.user!._id.toString(), 'UPDATE', 'VolunteerTeam', req.params.id, `Updated: ${Object.keys(updates).join(', ')}`);
+      logMockAudit(req.user!._id.toString(), 'UPDATE', 'VolunteerTeam', req.params.id as string, `Updated: ${Object.keys(updates).join(', ')}`);
 
       res.json({ team: populateMockTeam(mockTeams[idx]) });
       return;
@@ -310,7 +310,7 @@ router.delete('/:id', auth, authorize('admin'), async (req: Request, res: Respon
       const deleted = mockTeams[idx];
       mockTeams.splice(idx, 1);
 
-      logMockAudit(req.user!._id.toString(), 'DELETE', 'VolunteerTeam', req.params.id, `Deleted team: ${deleted.name}`);
+      logMockAudit(req.user!._id.toString(), 'DELETE', 'VolunteerTeam', req.params.id as string, `Deleted team: ${deleted.name}`);
 
       res.json({ message: 'Team deleted' });
       return;

@@ -47,6 +47,8 @@ router.post('/register', async (req: Request, res: Response): Promise<void> => {
         location: location || { lat: 0, lng: 0 },
         languagePreference: languagePreference || 'en',
         skills: skills || [],
+        createdAt: new Date(),
+        updatedAt: new Date(),
       };
       mockUsers.push(newUser);
 

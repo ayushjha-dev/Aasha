@@ -160,7 +160,7 @@ router.put('/:id', auth, authorize('admin'), async (req: Request, res: Response)
         updatedAt: new Date()
       };
 
-      logMockAudit(req.user!._id.toString(), 'UPDATE', 'Shelter', req.params.id, `Updated: ${Object.keys(updates).join(', ')}`);
+      logMockAudit(req.user!._id.toString(), 'UPDATE', 'Shelter', req.params.id as string, `Updated: ${Object.keys(updates).join(', ')}`);
 
       res.json({ shelter: mockShelters[idx] });
       return;
@@ -213,7 +213,7 @@ router.delete('/:id', auth, authorize('admin'), async (req: Request, res: Respon
       const deleted = mockShelters[idx];
       mockShelters.splice(idx, 1);
 
-      logMockAudit(req.user!._id.toString(), 'DELETE', 'Shelter', req.params.id, `Deleted shelter: ${deleted.name}`);
+      logMockAudit(req.user!._id.toString(), 'DELETE', 'Shelter', req.params.id as string, `Deleted shelter: ${deleted.name}`);
 
       res.json({ message: 'Shelter deleted' });
       return;

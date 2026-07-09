@@ -138,7 +138,7 @@ router.put('/:id', auth, authorize('admin'), async (req: Request, res: Response)
       mockDonations[idx].status = status as any;
       mockDonations[idx].updatedAt = new Date();
 
-      logMockAudit(req.user!._id.toString(), 'UPDATE', 'Donation', req.params.id, `Status changed to: ${status}`);
+      logMockAudit(req.user!._id.toString(), 'UPDATE', 'Donation', req.params.id as string, `Status changed to: ${status}`);
 
       res.json({ donation: populateMockDonation(mockDonations[idx]) });
       return;
